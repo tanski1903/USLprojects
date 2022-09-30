@@ -1,0 +1,39 @@
+create database bdaulapoo2;
+use bdaulapoo2;
+create table tbUsuario (
+idUsu int (11) primary key auto_increment,
+nomeUsu varchar (100) not null,
+emailUsu varchar (200) not null,
+senhaUsu varchar (60) not null,
+foneUsu varchar (15),
+sexoUsu int default (3));
+describe tbUsuario;
+insert into tbUsuario (
+nomeUsu,emailUsu,senhaUsu,foneUsu,sexoUsu)
+values
+("adm","a","1","(51)991094439","1");
+select * from tbUsuario;
+use bdaulapoo2;
+create table tbVeiculos (
+codVeic int (11) primary key auto_increment,
+tipoVeic varchar (100) not null,
+marcaVeic varchar (100) not null,
+modeloVeic varchar (100) not null,
+anoFabVeic int (10) not null,
+corVeic varchar (100) not null,
+placaVeic varchar (100) not null,
+kmVeic int (10) not null);
+describe tbVeiculos;
+insert into tbVeiculos (
+tipoVeic,marcaVeic,modeloVeic,anoFabVeic,corVeic,placaVeic,kmVeic)
+values
+("Hatch","Chevrolet","Onix",2016,"Prata","IXD4456",92000);
+select * from tbVeiculos;
+SELECT * FROM tbUsuario WHERE nomeUsu LIKE '%a%';
+use bdaulapoo2;
+alter table tbUsuario add cepUsu varchar (10) not null;
+alter table tbUsuario add lograUsu varchar (100) not null;
+alter table tbUsuario add bairroUsu varchar (100) not null;
+alter table tbUsuario add cidadeUsu varchar (100) not null;
+alter table tbUsuario add estadoUsu varchar (100) not null;
+alter table tbUsuario add nmrCasaUsu varchar (10) not null;

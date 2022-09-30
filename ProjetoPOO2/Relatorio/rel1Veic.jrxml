@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relVeic" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="42da46d7-a2b7-4fb7-98e3-40a25bce9691">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[YmRhdWxhcG9vMi50YnZlaWN1bG9zIEFTICw1NSwxMCxlZjA0M2I3ZC05OTU3LTQyYmUtODM5Yi05
+ZTUwNjAzZWY3Mjg7]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ProjetoCRUDDataBaseCon"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `codVeic`,
+	`tipoVeic`,
+	`marcaVeic`,
+	`modeloVeic`,
+	`placaVeic`
+FROM bdaulapoo2.tbveiculos]]>
+	</queryString>
+	<field name="codVeic" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="codVeic"/>
+		<property name="com.jaspersoft.studio.field.label" value="codVeic"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbveiculos"/>
+	</field>
+	<field name="tipoVeic" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="tipoVeic"/>
+		<property name="com.jaspersoft.studio.field.label" value="tipoVeic"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbveiculos"/>
+	</field>
+	<field name="marcaVeic" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="marcaVeic"/>
+		<property name="com.jaspersoft.studio.field.label" value="marcaVeic"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbveiculos"/>
+	</field>
+	<field name="modeloVeic" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="modeloVeic"/>
+		<property name="com.jaspersoft.studio.field.label" value="modeloVeic"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbveiculos"/>
+	</field>
+	<field name="placaVeic" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="placaVeic"/>
+		<property name="com.jaspersoft.studio.field.label" value="placaVeic"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbveiculos"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="51" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="0" width="595" height="30" uuid="55822fb0-5d96-4ecd-b60b-6c96b53a940a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Franklin Gothic Medium" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RELATÓRIO DE VEÍCULOS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="30" uuid="be93510e-cecb-4296-ae98-763ed35e3b32">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5e8d6aa-5579-477f-8614-3d464760c706"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Franklin Gothic Medium" size="16"/>
+				</textElement>
+				<text><![CDATA[COD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="30" uuid="311064c5-5bd2-4413-8ed9-1c3017534ffc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="672e5f0c-9354-42f4-ab0e-5cb2666b3d9f"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Franklin Gothic Medium" size="16"/>
+				</textElement>
+				<text><![CDATA[TIPO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="30" uuid="9ba6e051-05b6-45f5-93c2-f1eb0ed9d2f7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9f251d1a-6404-4983-ab6d-b9d47b050837"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Franklin Gothic Medium" size="16"/>
+				</textElement>
+				<text><![CDATA[MARCA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="30" uuid="1bef6382-26d2-4b47-9b67-b7ee87120820">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fc66d6c4-832b-4acb-8910-c823553c2c43"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Franklin Gothic Medium" size="16"/>
+				</textElement>
+				<text><![CDATA[MODELO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="30" uuid="a535b4b1-773c-490a-8c37-e932e8c84557">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b5c3ea4d-9c62-4d15-9d2c-40345ab09a6c"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Franklin Gothic Medium" size="16"/>
+				</textElement>
+				<text><![CDATA[PLACA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="111" height="30" uuid="43c4e20e-ce4d-40b8-8258-2e99fdfde5d0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5e8d6aa-5579-477f-8614-3d464760c706"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{codVeic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="111" height="30" uuid="abff93a3-82b9-4109-ab88-9db9fb477723">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="672e5f0c-9354-42f4-ab0e-5cb2666b3d9f"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tipoVeic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="0" width="111" height="30" uuid="28ad4aa5-4b48-456a-80e9-a52623773669">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9f251d1a-6404-4983-ab6d-b9d47b050837"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{marcaVeic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="111" height="30" uuid="95ab2a7a-1905-44df-8831-fd5a61a1cf6b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fc66d6c4-832b-4acb-8910-c823553c2c43"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{modeloVeic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="111" height="30" uuid="596a19ab-42ce-45f6-87ea-261b22c71971">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b5c3ea4d-9c62-4d15-9d2c-40345ab09a6c"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{placaVeic}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="-1" width="100" height="18" uuid="f6b76faf-c969-418d-aebe-ed30661ef2cc"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+</jasperReport>
